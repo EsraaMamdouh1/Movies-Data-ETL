@@ -1,8 +1,10 @@
-__pycache__/
+# Ignore data files
+ml-100k/
+
+# Ignore virtual environment directories
+venv/
+env/
+
+# Ignore compiled files
 *.pyc
-*.pyo
-*.pyd
-*.db
-*.log
-*.csv
-*.json
+__pycache__/

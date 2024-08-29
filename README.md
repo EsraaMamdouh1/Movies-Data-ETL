@@ -4,7 +4,7 @@ The goal of this ETL process is to extract movie ratings data, process it, and s
 
 ## Project Architecture
 
-![Project Architecture](C:\Users\XPRISTO\project1\data\Movies_Data_Pipeline2.png)
+![Project Architecture](Movies_Data_Pipeline2.png)
 
 ## Steps
 
@@ -47,7 +47,7 @@ To process the data, use the following command:
 
 After running the ETL process, the `uploaded` folder within the Docker container contains the processed `movies.csv` and `ratings.csv` files.
 
-![Uploaded Files in Docker Container](data/uploaded_files.png)
+![Uploaded Files in Docker Container](uploaded_files.png)
 
 **Note:** The `uploaded` folder within the Docker container is mounted to ensure the processed files are accessible outside the container.
 

@@ -2,9 +2,12 @@
 
 The goal of this ETL process is to extract movie ratings data, process it, and store it in a local storage setup using Docker. This project simulates the ETL process without relying on cloud services, making it suitable for local or on-premise environments.
 
+
 ## Project Architecture
 
+
 ![Project Architecture](Movies_Data_Pipeline2.png)
+
 
 ## Steps
 
@@ -24,12 +27,11 @@ The goal of this ETL process is to extract movie ratings data, process it, and s
       docker run --rm movies_data_etl
       ```
 
+
 ## Pre-requisites
 
 - **Docker**: Ensure Docker is installed and running on your machine.
 - **Python 3.x**: Required to run the Python scripts if not using Docker.
-
-## Applying The ETL Process
 
 
 ## Applying The ETL Process
@@ -51,10 +53,12 @@ After running the ETL process, the `uploaded` folder within the Docker container
 
 **Note:** The `uploaded` folder within the Docker container is mounted to ensure the processed files are accessible outside the container.
 
+
 ## Pre-requisites
 
 - **Docker**: Ensure Docker is installed and running on your machine.
 - **Python 3.x**: Required to run the Python scripts if not using Docker.
+
 
 ## Troubleshooting
 
@@ -65,6 +69,7 @@ After running the ETL process, the `uploaded` folder within the Docker container
 - **Script Execution Issues:**
   - Check that all dependencies are installed.
   - Ensure that the scripts have the necessary permissions to execute.
+
 
 ## License
 

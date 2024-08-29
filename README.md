@@ -4,7 +4,7 @@ The goal of this ETL process is to extract movie ratings data, process it, and s
 
 ## Project Architecture
 
-![Project Architecture](data/Movies_Data_Pipeline2.png)
+![Project Architecture](C:\Users\XPRISTO\project1\data\Movies_Data_Pipeline2.png)
 
 ## Steps
 
@@ -31,14 +31,42 @@ The goal of this ETL process is to extract movie ratings data, process it, and s
 
 ## Applying The ETL Process
 
-### 1. Download Data:
-```bash
-bash download_data.sh
 
-### 2. Run the ETL process:
-```bash
-bash python movies_etl.py
+## Applying The ETL Process
 
-## End Result:
+**Download Data:**  
+Use the following command to download the dataset:
 
-![Uploaded Files in Docker Container](data\uploaded_files.png)
+    bash download_data.sh
+
+**Run the ETL Process:**  
+To process the data, use the following command:
+
+    python movies_etl.py
+
+
+After running the ETL process, the `uploaded` folder within the Docker container contains the processed `movies.csv` and `ratings.csv` files.
+
+![Uploaded Files in Docker Container](data/uploaded_files.png)
+
+**Note:** The `uploaded` folder within the Docker container is mounted to ensure the processed files are accessible outside the container.
+
+## Pre-requisites
+
+- **Docker**: Ensure Docker is installed and running on your machine.
+- **Python 3.x**: Required to run the Python scripts if not using Docker.
+
+## Troubleshooting
+
+- **File Paths or Mounting Issues:**
+  - Ensure the paths in your Docker configuration are correct.
+  - Verify that the `uploaded` folder is correctly mounted and accessible.
+
+- **Script Execution Issues:**
+  - Check that all dependencies are installed.
+  - Ensure that the scripts have the necessary permissions to execute.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
